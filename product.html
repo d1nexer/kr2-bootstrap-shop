@@ -6,7 +6,7 @@
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Товар 1 — Bootstrap Shop</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -36,7 +36,7 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="catalog.html"
+              <a class="nav-link active" aria-current="page" href="product.html"
                 >Товар</a
               >
             </li>
@@ -84,11 +84,22 @@
 
       <div class="row g-4">
         <div class="col-12 col-lg-6">
-          <div class="card shadow-sm">
-            <div
-              class="placeholder-image bg-light border rounded d-flex align-items-center justify-content-center"
-            >
-              <span class="text-muted">Изображение товара</span>
+          <div class="card shadow-sm border-0 overflow-hidden mb-3">
+            <img
+              src="images/product1.jpg"
+              class="img-fluid rounded"
+              alt="Дора — Боже, храни кьют-рок"
+            />
+          </div>
+          <div class="p-3 bg-white border rounded shadow-sm">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <span class="small fw-bold text-muted"
+                >Новинка от нашего дизайнера</span
+              >
+              <span
+                class="badge bg-primary-subtle text-primary border border-primary-subtle"
+                >Эксклюзив</span
+              >
             </div>
           </div>
         </div>
@@ -119,25 +130,119 @@
       </div>
 
       <section class="mt-5">
-        <h2 class="h4 mb-3">Характеристики</h2>
+        <h2 class="h4 mb-3">Информация о товаре</h2>
 
-        <div class="table-responsive">
-          <table class="table table-striped table-bordered align-middle">
-            <tbody>
-              <tr>
-                <th scope="row">Категория</th>
-                <td>Учебные товары</td>
-              </tr>
-              <tr>
-                <th scope="row">Цена</th>
-                <td>1000 руб.</td>
-              </tr>
-              <tr>
-                <th scope="row">Наличие</th>
-                <td>В наличии</td>
-              </tr>
-            </tbody>
-          </table>
+        <ul class="nav nav-tabs" id="productTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active"
+              id="desc-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#desc-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="desc-tab-pane"
+              aria-selected="true"
+            >
+              Описание
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="specs-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#specs-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="specs-tab-pane"
+              aria-selected="false"
+            >
+              Характеристики
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="reviews-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#reviews-tab-pane"
+              type="button"
+              role="tab"
+              aria-controls="reviews-tab-pane"
+              aria-selected="false"
+            >
+              Отзывы (2)
+            </button>
+          </li>
+        </ul>
+
+        <div
+          class="tab-content border border-top-0 rounded-bottom p-3 bg-white"
+          id="productTabContent"
+        >
+          <div
+            class="tab-pane fade show active"
+            id="desc-tab-pane"
+            role="tabpanel"
+            aria-labelledby="desc-tab"
+            tabindex="0"
+          >
+            <p>
+              Подробное текстовое описание товара. Учебный товар создан для
+              демонстрации возможностей сетки и компонентов Bootstrap.
+            </p>
+          </div>
+
+          <div
+            class="tab-pane fade"
+            id="specs-tab-pane"
+            role="tabpanel"
+            aria-labelledby="specs-tab"
+            tabindex="0"
+          >
+            <div class="table-responsive">
+              <table
+                class="table table-striped table-bordered align-middle mb-0"
+              >
+                <tbody>
+                  <tr>
+                    <th scope="row">Категория</th>
+                    <td>Учебные товары</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Цена</th>
+                    <td>1000 руб.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Наличие</th>
+                    <td>В наличии</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div
+            class="tab-pane fade"
+            id="reviews-tab-pane"
+            role="tabpanel"
+            aria-labelledby="reviews-tab"
+            tabindex="0"
+          >
+            <div class="mb-3 border-bottom pb-2">
+              <strong>Алексей</strong>
+              <span class="text-muted fs-7">— 12.10.2026</span>
+              <p class="mb-0">
+                Отличный учебный товар, все соответствует описанию!
+              </p>
+            </div>
+            <div>
+              <strong>Мария</strong>
+              <span class="text-muted fs-7">— 15.10.2026</span>
+              <p class="mb-0">Быстрая доставка и хорошее качество.</p>
+            </div>
+          </div>
         </div>
       </section>
     </main>
