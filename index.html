@@ -41,7 +41,7 @@
         <div class="collapse navbar-collapse" id="mainNavbar">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="catalog.html"
+              <a class="nav-link active" aria-current="page" href="index.html"
                 >Главная</a
               >
             </li>
@@ -75,10 +75,69 @@
           </div>
 
           <div class="col-12 col-lg-6">
-            <div class="p-5 bg-light border rounded text-center">
-              <p class="mb-0 text-muted">
-                Здесь может быть изображение, баннер или промо-блок.
-              </p>
+            <div
+              id="promoCarousel"
+              class="carousel slide border rounded shadow-sm overflow-hidden"
+              data-bs-ride="carousel"
+            >
+              <!-- Индикаторы слайдера -->
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#promoCarousel"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Слайд 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#promoCarousel"
+                  data-bs-slide-to="1"
+                  aria-label="Слайд 2"
+                ></button>
+              </div>
+
+              <!-- Слайды -->
+              <div class="carousel-inner">
+                <div
+                  class="carousel-item active bg-primary text-white p-5 text-center"
+                >
+                  <h3 class="h4">Осенняя распродажа</h3>
+                  <p class="mb-0">
+                    Скидки до 50% на все учебные товары каталога!
+                  </p>
+                </div>
+                <div class="carousel-item bg-dark text-white p-5 text-center">
+                  <h3 class="h4">Новая коллекция</h3>
+                  <p class="mb-0">Поступление новых позиций уже на сайте.</p>
+                </div>
+              </div>
+
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#promoCarousel"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Предыдущий</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#promoCarousel"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Следующий</span>
+              </button>
             </div>
           </div>
         </div>
@@ -128,8 +187,8 @@
           <div class="col-12 col-md-6 col-lg-4">
             <div class="border rounded h-100 p-4">
               <span class="badge bg-success mb-3">Новинка</span>
-              <h3 class="h5">Товар 1</h3>
-              <p class="text-muted">Краткое описание учебного товара.</p>
+              <h3 class="h5">Тетрадь по фронтэнду</h3>
+              <p class="text-muted">Удобная и стильная тетрадь для веб-разработчиков.</p>
               <p class="fw-bold mb-3">1000 руб.</p>
               <a class="btn btn-primary" href="product.html"> Подробнее </a>
             </div>
@@ -138,8 +197,8 @@
           <div class="col-12 col-md-6 col-lg-4">
             <div class="border rounded h-100 p-4">
               <span class="badge bg-warning text-dark mb-3">Хит</span>
-              <h3 class="h5">Товар 2</h3>
-              <p class="text-muted">Краткое описание учебного товара.</p>
+              <h3 class="h5">Учебник по JavaScript</h3>
+              <p class="text-muted">Полное руководство по изучению JavaScript для начинающих.</p>
               <p class="fw-bold mb-3">1500 руб.</p>
               <a class="btn btn-primary" href="product.html"> Подробнее </a>
             </div>
@@ -148,9 +207,9 @@
           <div class="col-12 col-md-6 col-lg-4">
             <div class="border rounded h-100 p-4">
               <span class="badge bg-danger mb-3">Скидка</span>
-              <h3 class="h5">Товар 3</h3>
-              <p class="text-muted">Краткое описание учебного товара.</p>
-              <p class="fw-bold mb-3">2000 руб.</p>
+              <h3 class="h5">Книга по CSS</h3>
+              <p class="text-muted">Полное руководство по изучению CSS для начинающих.</p>
+              <p class="fw-bold mb-3"><del class="text-muted me-2">2000 руб.</del>1800 руб.</p>
               <a class="btn btn-primary" href="product.html"> Подробнее </a>
             </div>
           </div>
